@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	{* Bootstrap 5 CSS *}
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- Bootstrap 5 Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="icon" type="image/x-icon" href="{$basePath}/img/favicon/favicon.ico">
+	{* Google Fonts Spartan *}
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+	<!-- CSS file -->
+	<link rel="stylesheet" href="{$baseUrl}/css/style.css">
+	<link rel="stylesheet" href="{$baseUrl}/css/animation.css">
+	{* jQuery 3.6.0, Google CDN*}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>{ifset title}{include title|stripHtml} | {/ifset}PeterCubon.sk</title>
+</head>
+
+	<body id="body">
+
+
+		<section id="alertMessage">
+			<div n:foreach="$flashes as $flash" class="alert alert-primary alert-dismissible text-center fade show rounded-0" role="alert">
+				<strong>{$flash->message}</strong>
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		</section>
+
+		<section id="headerAndNavbar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="navbar fixed-top white">
+						<div class="col text-start">
+							<a n:href="Homepage:default" class="nav-link">
+								<img src="{$basePath}/img/logo_blue.svg" class="img-fluid" style="max-height: 100px;" alt="logo PC web development">
+							</a>
+						</div>
+						<div class="col text-end h1 align-self-center pe-3">
+							<a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+								<i class="bi bi-list"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+				<div class="offcanvas-header">
+					<small class="offcanvas-title" id="offcanvasExampleLabel">peter<span class="fw-800 spartan">cubon</span> .sk</small>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<a href="tel:+421940590940" class="nav-link">
+									<i class="bi bi-phone me-2 text-primary"></i> 0940 590 940
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="mailto:info@petercubon.sk" class="nav-link">
+									<i class="bi bi-send text-primary me-3"></i> info@petercubon.sk
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="https://github.com/petercubon?tab=repositories" class="nav-link">
+									<i class="bi bi-github text-primary me-3"></i> Github
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a n:href="Cookie:about" class="nav-link">
+									<i class="bi bi-circle me-2 text-primary"></i> Viac súboroch Cookie
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a n:href="Cookie:set" class="nav-link">
+									<i class="bi bi-sliders me-2 text-primary"></i>
+									Nastavenia súborov Cookie
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a n:href="Cookie:gdpr" class="nav-link">
+									<i class="bi bi-shield me-2 text-primary"></i>
+									Spracovanie osobných údajov
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{include content}
+
+		<section id="footer" class="">
+			<div class="container-fluid my-footer">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-md-3 mb-5 mb-md-0 text-center">
+						<img src="{$basePath}/img/logo_white.svg" class="w-75" alt="logo web development">
+					</div>
+					<div class="col-md-3 mb-5 mb-md-0  text-center">
+						<p>
+							<a href="tel:00421940590940" class="text-decoration-none text-light">
+								<i class="bi bi-telephone text-light" style="margin-right: 0.25em;"></i> 0940 590 940
+							</a>
+						</p>
+						<p>
+							<i class="bi bi-envelope text-light" style="margin-right: 0.25em;"></i>
+						<a href="mailto:info@petercubon.sk" class="text-decoration-none text-light">
+							info@petercubon.sk
+						</a>
+						</p>
+					</div>
+					<div class="col-md-3 mb-5 mb-md-0  text-center">
+						<p><a n:href="Cookie:about">Viac o súboroch Cookie</a></p>
+						<p><a n:href="Cookie:set">Nastavenia súborov Cookie</a></p>
+						<p><a n:href="Cookie:gdpr">Spracovanie osobných údajov</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{block scripts}
+			<script src="https://nette.github.io/resources/js/3/netteForms.min.js"></script>
+		{/block}
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+		<script src="{$baseUrl}/js/animation.js"></script>
+		<script>
+			AOS.init({
+				duration: 1200,
+			});
+		</script>
+
+		<!-- re-Captcha -->
+		<script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
+		<script src="{$baseUrl}/js/invisibleRecaptcha.js"></script>
+
+	</body>
+</html>

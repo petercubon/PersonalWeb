@@ -1,0 +1,58 @@
+
+<form n:name="form" class="ajax">
+    <!-- Basic -->
+    <div class="form-check form-switch py-4">
+      <input n:name="basic" class="form-check-input mt-2" type="checkbox" id="basic" value="1" checked disabled>
+        <label class="" for="basic">
+          <h4 class="spartan fw-300">
+            1. Súbory cookies pre základnú funkcionalitu stránok
+          </h4>
+          <p>
+            Ide o kategóriu súborov Cookies, ktoré zabezpečujú základnú funkcionalitu webových stránok.
+          </p>
+        </label>
+    </div>
+
+    <!-- gA -->
+    <div class="form-check form-switch">
+      <input n:name="gA" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
+        {if (isset($_COOKIE["gA"]))}
+          checked
+        {/if}>
+        <label class="form-check-label" for="flexSwitchCheckDefault">
+          <h4 class="spartan fw-300">
+            2. Súbory cookies služby Google Analytics
+          </h4>
+          <p>
+            Ide o kategóriu súborov Cookies, ktoré majú na starosti zhromažďovať informácie napr. o návštevnosti internetových stránok, pričom tieto sú spracovávané v anonymizovanej podobe v súlade s <a href="https://policies.google.com/privacy?hl=cs"> pravidlami ochrany osobných údajov </a>
+            a <a href="https://policies.google.com/terms?hl=cs"> Zmluvnými podmienkami spoločnosti Google.</a>
+          </p>
+          <p>
+            Vami navštívená stránka používa analytické súbory Cookies prostredníctvom využitia služby Google Analytics.
+          </p>
+        </label>
+      </div>
+
+    <!-- reCaptcha -->
+    <div class="form-check form-switch py-4">
+      <input n:name="reCaptcha" class="form-check-input mt-2" type="checkbox" id="reCaptcha"
+        {if (isset($_COOKIE["reCaptcha"]))}
+          checked
+        {/if}>
+        <h4 class="spartan fw-300">
+          3. Súbory cookies služby reCAPTCHA
+        </h4>
+        <p>
+          Kategória Cookies, ktoré sú využívané službou reCAPTCHA. Táto služba zabezpečuje dohľad nad odosielaním dát prostredníctvom
+          kontaktného formuláru v súlade s <a href="https://policies.google.com/privacy?hl=cs"> pravidlami ochrany osobných údajov </a>
+          a <a href="https://policies.google.com/terms?hl=cs"> Zmluvnými podmienkami </a> spoločnosti Google.
+        </p>
+        <p>
+          Bez súhlasu Cookies reCAPTCHA nie je možné odoslanie kontaktného formuláru.
+        </p>
+    </div>
+
+    <div class="col-12 col-lg-2 col-md-3 py-3">
+      <button n:name="send" type="submit" class="btn btn-primary w-100"> Ulož nastavenie </button>
+    </div>
+  </form>

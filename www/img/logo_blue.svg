@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="86.612999mm"
+   viewBox="0 0 210 86.612999"
+   version="1.1"
+   id="svg933"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="logo_blue.svg"
+   inkscape:export-filename="C:\laragon\www\nette\nette-petrik\www\img\logo_black.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview935"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6171572"
+     inkscape:cx="409.05114"
+     inkscape:cy="189.22094"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     height="86.613mm" />
+  <defs
+     id="defs930">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <g
+     inkscape:label="base"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="text"
+     style="display:inline">
+    <path
+       id="path7659-1"
+       style="fill:#005c94;stroke:none;stroke-width:0.876423;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 163.67188 37.794922 A 125.87712 125.88221 0 0 0 37.794922 163.67773 A 125.87712 125.88221 0 0 0 163.67188 289.56055 A 125.87712 125.88221 0 0 0 239.30664 264.20117 L 227.3457 247.50586 A 105.32777 105.33202 0 0 1 163.67383 269.01172 A 105.32777 105.33202 0 0 1 58.345703 163.67969 A 105.32777 105.33202 0 0 1 163.67383 58.347656 A 105.32777 105.33202 0 0 1 226.98828 79.503906 L 239.0293 62.849609 A 125.87712 125.88221 0 0 0 163.67188 37.794922 z "
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#005c94;stroke:#005c94;stroke-width:0.503561px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 33.013636,28.524988 11.55397,0.0057 c 5.912259,0.03673 8.488722,5.335346 8.341863,8.162681 0.0091,7.509113 -5.847882,8.458784 -9.144576,8.458784 l -7.54453,-0.0057 0.02305,13.026426 -2.976254,-0.01979 0.0023,-12.643498 3.40201,-3.385036 7.6626,-0.0018 c 4.149323,-0.161615 5.636343,-3.068885 5.599127,-5.39097 -0.03036,-1.893918 -1.362175,-5.195745 -5.885621,-5.195745 l -10.791687,0.01941 0.01066,-3.157867"
+       id="path1234"
+       sodipodi:nodetypes="ccccccccccsccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20.1424px;line-height:1.25;font-family:sans-serif;fill:#005c94;fill-opacity:1;stroke:none;stroke-width:0.503561"
+       x="70.504623"
+       y="37.916756"
+       id="text22636"><tspan
+         sodipodi:role="line"
+         id="tspan22634"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Medium';fill:#005c94;stroke-width:0.503561"
+         x="70.504623"
+         y="37.916756">WEB </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Medium';fill:#005c94;stroke-width:0.503561"
+         x="70.504623"
+         y="63.116985"
+         id="tspan22638">DEVELOPMENT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-36.54026"
+       y="-16.578451"
+       id="text27856"><tspan
+         sodipodi:role="line"
+         id="tspan27854"
+         style="stroke-width:0.264583"
+         x="-36.54026"
+         y="-16.578451" /></text>
+  </g>
+</svg>

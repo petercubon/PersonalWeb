@@ -1,0 +1,138 @@
+body {
+    color: black;
+    background-color: white;
+}
+
+.white {
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+    transition: 1000ms;
+}
+
+a {
+    text-decoration: none;
+    color: #005c94ff;
+}
+
+.spartan {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    color: #005c94ff;
+    border: 1px solid #005c94ff;
+    width: 100%;
+}
+
+.progress {
+    height: 2em;   
+}
+
+.progress h4{
+    padding-top: 5px;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.btn .my-btn-light {
+    background-color: white;
+    border: 0px;
+}
+
+.my-btn-light i {
+    color: black;
+}
+
+.my-progress {
+    height: 2px;
+    background-color: dodgerblue;
+}
+
+.my-progress-50 {
+    width: 50%;
+}
+
+.my-progress-75 {
+    width: 75%;
+}
+
+.my-progress-33 {
+    width: 33%;
+}
+
+.my-progress-25 {
+    width: 25%;
+}
+
+.my-progress-15 {
+    width: 15%;
+}
+
+.my-progress-80 {
+    width: 80%;
+}
+
+.my-progress-90 {
+    width: 90%;
+}
+
+.my-progress-activity .row {
+    padding-bottom: 2em;
+}
+
+.skills img {
+    width: 45px;
+}
+
+.list-group-item {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.my-footer {
+    background-color: #005c94ff;
+    margin-top: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#footer p a{
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #mainBanner img{
+        margin-top: 25%;
+    }
+}

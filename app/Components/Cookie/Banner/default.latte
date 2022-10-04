@@ -1,0 +1,36 @@
+
+<section id="cookieBanner" n:if="!$basic">
+            <div class="container-fluid fixed-bottom" n:snippet="cookie">
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <h5 class="spartan fw-500">
+                        Tieto internetové stránky používajú súbory Cookie.
+                    </h5>
+                    <p>
+                        Informacie o súboroch Cookie sú dostupné na odkaze
+                        <a href="{plink cookie:about}">
+                            <strong>O súboroch Cookie</strong>
+                        </a> .
+                        Nastavenie súborov Cookie a ich úpravy je možné vykonať v časti
+                        <a href="{plink Cookie:set}">
+                            <strong>Nastavenia súborov Cookie</strong>
+                        </a>
+                    </p>
+                    <div class="row">
+                        <div class="d-grid gap-2 col-12 col-md-6 col-lg-3 me-auto">
+                            <a href="{plink cookie:set}" class="btn btn-outline-primary" type="button">
+                                <i class="bi bi-gear me-2"></i> Nastavenia Cookies </a>
+                            <a n:href="acceptAllCookie!" class="btn btn-success" type="button">
+                                <i class="bi bi-check2 me-2"></i> Prijat vsetky Cookies </a>
+                        </div>
+                    </div>
+                    <a n:href="close!" class="ajax">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="alert"
+                            aria-label="Close">
+                        </button>
+                    </a>
+                </div>
+            </div>
+    </section>
